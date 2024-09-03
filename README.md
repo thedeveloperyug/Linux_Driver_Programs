@@ -11,9 +11,8 @@ Welcome to the **Linux Device Driver Programs** repository! This repository cont
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
 - [Step-by-Step Program Execution](#step-by-step-program-execution)
-- [Programs](#programs)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -45,3 +44,27 @@ Before you start, ensure that you have the following installed on your Linux mac
 - **Linux Kernel Headers**: Required for compiling kernel modules.
   ```bash
   sudo apt-get install linux-headers-$(uname -r)
+
+
+### Step-by-step Program Execution
+
+Each program is contained in its own directory. Navigate to the directory of the program you want to compile:
+
+```bash
+  mkdir Driver
+  cd Driver
+  touch first_drive.c Makefile
+  
+- **Examine the Source Code**
+
+
+Before compiling, you may want to review the source code. Each program typically includes a .c file and a Makefile. The .c file contains the driver code, and the Makefile defines how to compile the module.
+
+ ```bash
+        sudo make first_drive.c
+        
+This will produce a .ko file (e.g., hello_world.ko), which is the compiled kernel module.
+
+
+
+
