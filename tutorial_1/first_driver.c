@@ -1,5 +1,5 @@
 /***************************************************************************/ /**
- * @file firstDriver.c
+ * @file first_driver.c
  * @author Yogesh (thedeveloperyug@gmail.com)
  * @brief Sample kernel module
  * @version 0.1
@@ -14,20 +14,24 @@
 #include <linux/init.h>
 #include <linux/module.h>
 
-/*
-** Module Init function
-*/
+
+// module init function
 static int __init firstDriver_init(void){
     printk(KERN_INFO "First kernel module inserted successfully");
     return 0;
 }
 
+// module exit function
 static void __exit firstDriver_exit(void)
 {
     printk(KERN_INFO "First kernel module removed successfully");
 }
 
+
+
+// function call for loading the kernal module
 module_init(firstDriver_init);
+// function call for unloading the kernal module
 module_exit(firstDriver_exit);
 
 
