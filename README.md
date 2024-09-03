@@ -1,5 +1,3 @@
-# Linux_Driver_Programs
-
 # Linux Device Driver Programs
 
 Welcome to the **Linux Device Driver Programs** repository! This repository contains a collection of device drivers written for the Linux kernel. These programs serve as examples and educational resources for understanding and developing Linux kernel modules and device drivers.
@@ -63,7 +61,7 @@ Each program is contained in its own directory. Navigate to the directory of the
 Before compiling, you may want to review the source code. Each program typically includes a .c file and a Makefile. The .c file contains the driver code, and the Makefile defines how to compile the module.
 
 ```bash
-        sudo make first_drive.c
+sudo make first_drive.c
 ```
 
 This will produce a .ko file (e.g., hello_world.ko), which is the compiled kernel module.
