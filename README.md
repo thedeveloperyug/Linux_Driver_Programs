@@ -47,6 +47,7 @@ Before you start, ensure that you have the following installed on your Linux mac
 ### Step-by-step Program Execution
 
 Each program is contained in its own directory. Navigate to the directory of the program you want to compile:
+file will be found in tutorial_1 directory.
 
 ```bash
   mkdir Driver
