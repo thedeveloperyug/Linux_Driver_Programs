@@ -1,6 +1,6 @@
 /***************************************************************************/
 /**
- * @file major_minornumber.c
+ * @file major_minor_number.c
  * @author Yogesh
  * @brief Dynamic Allocation for major and minor number
  * @version 1.0
