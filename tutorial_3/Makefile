@@ -1,5 +1,5 @@
 # Name of the module
-obj-m += major_minor_number.o
+obj-m += static_major_minor_number.o
 
 # Kernel build directory
 KDIR := /lib/modules/$(shell uname -r)/build
